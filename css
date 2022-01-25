@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 16; /*3. betűméret*/
+    color: black;  /*13 szövegszín*/
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /*14. betűtípus*/
+    background-image: url(images/hatter.jpg); /*4 háttérkép beszúrás*/
+    background-repeat: no-repeat; /*5.háttérkép ne ismétlődjön*/
+    background-position: center center; /*6 középre igazitva*/
+    background-size: 600px 460px; /*7. háttérkép méret*/
+
+
+}
+
+.container {
+    max-width: 800px; /*8. maximális szélesség*/
+    background-color: #ddd; /*9. háttérszín*/
+    opacity: 0.6; /*10. átlátszó*/
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content {
+    background-color: #ddd; 
+    opacity: 0.6;
+    padding: 20px;
+}
+
+.header {
+    font-size: 0;
+    height: 200px;
+}
+
+.header_img {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 50%;
+    height: 200px;
+}
+
+nav {
+    float: left;
+    margin: 3px;
+    padding: 20px;
+    display: inline-block;
+    width: 25%;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+}
+
+nav ul li:hover a {
+    background-color: blueviolet;
+    color: white;
+    padding: 10px;
+}
+
+.egy {
+    text-shadow: 5px 0 20px black;   /* 14.árnyékolás*/
+    background-color: white;  /*15 háttér szín*/
+
+
+}
+
+.ho {
+    text-align: center; /*16. középre igazitva*/
+    background-color: white; /* 17. cimsor fehér*/
+    margin: 5px 0;  /*18. margó beállitás*/
+
+
+}
+
+p {
+    font-size: 1.4rem;  /*kenyérszövegméret 1.4rem */
+    text-align:justify   
+}
+
+.ketto { 
+    line-height: 2rem;  /* 19. sormagasság */
+
+}
+
+p img {
+    width: 200px;   /*kép szélesség */
+    float: right;  /* kép lebegés jobbra*/
+    margin: 5px;
+
+}
+
+
+@media (max-width: 800px) {
+    /* keskeny kijelző */
+    .ures {
+        height: 600px;
+        flex: 1;
+    }
+    #header_left {
+        content: url(images/header_left2.jpg);  /*kép helyezés */
+
+    }
+    #header_right {
+        content: url(images/header_right2.jpg);
+
+    }
+
+    nav {
+        background-color: white;
+        top: 0;
+        z-index: 5;
+        width: 100%;
+        position:sticky;   /* menű ragasztás */
+    }
+
+}
+
